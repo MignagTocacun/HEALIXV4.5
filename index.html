@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healix - Your Personal Healthcare Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 Welcome to Healix!</h1>
+        <p>Your AI-powered healthcare assistant.</p>
+        
+        <div class="section">
+            <h2>🔍 Health Scanning & Diagnostics</h2>
+            <label>❤️ Heart Rate (bpm): <input type="number" id="heartRate" placeholder="Enter heart rate"></label><br>
+            <label>🌡️ Temperature (°C): <input type="number" id="temperature" placeholder="Enter temperature"></label><br>
+            <label>🫁 Breathing Rate (breaths per min): <input type="number" id="breathingRate" placeholder="Enter breathing rate"></label><br>
+        </div>
+        
+        <div class="section">
+            <h2>🩺 Symptoms Check</h2>
+            <label><input type="checkbox" id="fever"> 🤒 Fever</label>
+            <label><input type="checkbox" id="cough"> 🤧 Cough</label>
+            <label><input type="checkbox" id="headache"> 🤕 Headache</label>
+            <label><input type="checkbox" id="fatigue"> 😴 Fatigue</label>
+            <label><input type="checkbox" id="shortBreath"> 😤 Shortness of Breath</label>
+        </div>
+
+        <button onclick="checkHealth()">🩺 Analyze My Health</button>
+
+        <h2>📋 Diagnosis & Treatment</h2>
+        <p id="condition">Your health status will be displayed here.</p>
+        <p id="advice">Medical recommendations will appear here.</p>
+        
+        <h2>📊 Health Trends</h2>
+        <canvas id="healthChart"></canvas>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
